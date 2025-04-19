@@ -1,57 +1,109 @@
+
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>היער הקסום</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url("היער הקסום.png") no-repeat center top;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <title>היער הקסום</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background-moon-icon.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
 
-    .btn {
-      background-color: #ff4da6;
-      color: white;
-      font-size: 22px;
-      padding: 14px 28px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      margin: 30px 0;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
 
-    .btn:hover {
-      background-color: #e04394;
-    }
+        h1 {
+            font-size: 3em;
+            color: #fff0a8;
+            text-shadow: 2px 2px 4px #000;
+            margin-bottom: 10px;
+        }
 
-    .image-wrapper {
-      max-width: 420px;
-      width: 90%;
-      margin-top: 40px;
-    }
+        h2 {
+            font-size: 2em;
+            margin-top: 40px;
+            color: white;
+        }
 
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-  </style>
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: right;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: white;
+        }
+
+        li::before {
+            content: '✨';
+            margin-left: 10px;
+            color: gold;
+        }
+
+        .btn {
+            background-color: #ff4da6;
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e43e93;
+        }
+    </style>
 </head>
 <body>
-  <div class="image-wrapper">
-    <img src="היער הקסום.png" alt="היער הקסום">
-  </div>
-  <button class="btn">לרכישה</button>
+    <div class="overlay">
+        <h1>היער הקסום</h1>
+        <p style="color:#fff0a8;">המשחק שיעניק קצת קסם לזוגיות שלכם</p>
+
+        <h2>למי זה מתאים?</h2>
+        <ul>
+            <li>לזוגות בתחילת הדרך שרוצים להעמיק</li>
+            <li>לנשואים שרוצים רגע לעצמם</li>
+            <li>לזוגות עם ילדים שמחפשים שעה של יחד</li>
+            <li>למי שמרגיש שמשהו חסר – ולא יודע מה</li>
+        </ul>
+
+        <h2>איך זה עובד?</h2>
+        <ul>
+            <li>בלי לצאת מהבית, בלי הדפסות, בלי שום הכנה.</li>
+            <li>נרשמים, מקבלים לינק במייל, לוחצים – ומתחילים.</li>
+            <li>כל שלב ידריך אתכם מה לעשות – והשיחה תזרום מעצמה.</li>
+        </ul>
+
+        <h2>מה זה בכלל "היער הקסום"?</h2>
+        <ul>
+            <li>זה לא משחק – זו חוויה.</li>
+            <li>שאלות עומק, משימות זוגיות קלילות, רגעים רומנטיים</li>
+            <li>וגם תיבול של משימות מיניות רכות, הכל ברגישות ובהתאמה לכם.</li>
+        </ul>
+
+        <button class="btn">לרכישה</button>
+    </div>
 </body>
 </html>
